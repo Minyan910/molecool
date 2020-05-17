@@ -13,6 +13,11 @@ This repository is currently under development. To developmental install, downlo
 
 in the repository directory.
 
+This package requires the following:
+-NumPy
+-Matplotlib
+
+
 ### Copyright
 
 Copyright (c) 2020, Minyan Wang
