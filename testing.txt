@@ -1,1 +1,2 @@
 added this file from a new clone
+Now I added a new line!
