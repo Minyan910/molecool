@@ -5,6 +5,7 @@ Functions for manipulating pdf files
 """
 
 import os
+import numpy as np
 
 
 def open_pdb(f_loc):
