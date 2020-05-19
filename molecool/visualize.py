@@ -12,7 +12,11 @@ from .atom_data import atom_colors
 def draw_molecule(coordinates, symbols, draw_bonds=None, save_location=None, dpi=300):
     
     # Draw a picture of a molecule using matplotlib.
-    
+    shape1 = len(coordinates)
+    shape2 = len(symbols)
+    if shape1 == shape2:
+        raise Exception("symbols and coordinates should have the same length")
+
     # Create figure
     fig = plt.figure()
     ax = fig.add_subplot(111, projection='3d')

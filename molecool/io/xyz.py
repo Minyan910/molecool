@@ -12,8 +12,17 @@ import numpy as np
 
 
 def open_xyz(file_location):
-    
-    # Open an xyz file and return symbols and coordinates.
+    """
+    Open an xyz file and return symbols and coordinates.
+
+    Parameters
+    ----------
+    file_location : str
+
+    Returns
+    -------
+    symbols, coords : np.ndarray
+    """
     xyz_file = np.genfromtxt(fname=file_location, skip_header=2, dtype='unicode')
     symbols = xyz_file[:,0]
     coords = (xyz_file[:,1:])

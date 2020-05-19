@@ -14,7 +14,7 @@ def calculate_distance(rA, rB):
     Parameters
     ----------
     rA, rB : np.ndarray
-        The coordinates of each points.
+        The coordinates of each point.
 
     Returns
     -------
@@ -39,6 +39,28 @@ def calculate_distance(rA, rB):
     return dist
 
 def calculate_angle(rA, rB, rC, degrees=False):
+    """
+    Calculate the angle between three points.
+
+    Parameters
+    ----------
+    rA, rB, rC : np.ndarray
+        The coordinates of each point.
+    degrees : Bool
+        False for giving answer in radians, otherwise degrees.
+
+    Returns
+    -------
+    theta : float
+
+    Example
+    -------
+    >>> r1 = np.array([0.0, 0.0, 0.0])
+    >>> r2 = np.array([3.0, 0.0, 0.0])
+    >>> r3 = np.array([0.0, 4.0, 0.0])
+    >>> calculate_angle(r1, r2, r3, True)
+    53.13010235415599
+    """
     # Calculate the angle between three points. Answer is given in radians by default, but can be given in degrees
     # by setting degrees=True
     AB = rB - rA
